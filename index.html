@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag and Drop</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h3>4 Drop Zones</h3>
+    <h3>4 Dragable Elements</h3>
+    <h3>e1, e2, e3, e4 are the Draggable Elements</h3>
+    <h3>zone1, zone2, zone3, zone4 are the Drop Zones<h3>
+    <div class="container">
+      <div class="dragHolder">
+        <div id="e1" class="dragableElement" draggable="true">
+          Dragable Element 1
+        </div>
+        <div id="e2" class="dragableElement" draggable="true">
+          Dragable Element 2
+        </div>
+        <div id="e3" class="dragableElement" draggable="true">
+          Dragable Element 3
+        </div>
+        <div id="e4" class="dragableElement" draggable="true">
+          Dragable Element 4
+        </div>
+      </div>
+      <div class="dropZoneHolder">
+        <div id="zone1" class="dropZone"></div>
+        <div id="zone2" class="dropZone"></div>
+        <div id="zone3" class="dropZone"></div>
+        <div id="zone4" class="dropZone"></div>
+      </div>
+      <!-- eN => Element Number: N; N belongs to [1, infinity)-->
+    </div>
+    <script src="./dragHandlers.js"></script>
+    <script src="./dropHandlers.js"></script>
+  </body>
+</html>
